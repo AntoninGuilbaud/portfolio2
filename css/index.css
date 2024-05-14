@@ -598,13 +598,13 @@ form button:hover {
 }
 
 .card:hover {
-  transform: translateY(-20px);
+  transform: translateY(-10px);
   transition: 0.4s ease-out;
 }
 
 .card:hover ~ .card {
   position: relative;
-  left: 60px;
+  left: 10px;
   transition: 0.4s ease-out;
 }
 
