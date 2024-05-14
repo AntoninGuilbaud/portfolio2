@@ -183,11 +183,13 @@ footer .footer {
     }
 
     body {
-        background:url("../image/back3.jpg");
-        background-size:cover;
+        background: url("../image/back3.jpg");
+        background-size: cover;
+        background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
     }
+    
 
     .mouse-tracker {
         display: none;
