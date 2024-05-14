@@ -158,6 +158,15 @@ footer .footer {
 }
 
 
+@media only screen and (max-width: 768px) {
+    body {
+        background:url("../image/back3.jpg");      
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+  }
 
 
 @media (max-width: 768px) {
@@ -165,15 +174,6 @@ footer .footer {
     nav {
         display: none;
     }
-
-    body {
-        background: url("../image/back3.jpg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-    }
-    
 
     .mouse-tracker {
         display: none;
@@ -198,14 +198,3 @@ footer .footer {
     }
 
 }
-
-@media only screen and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-        background: url("../image/back3.jpg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-    }
-}
-
