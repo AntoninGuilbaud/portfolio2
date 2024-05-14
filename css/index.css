@@ -187,7 +187,6 @@
   scrollbar-width: thin; /* Add this line */
   scrollbar-color: black; /* Add this line */
   margin: 0 10px; /* Add this line */
-  flex-wrap: wrap;
   max-width: 2000px;
 }
 
@@ -542,6 +541,7 @@ form button:hover {
 
 .presentation .presentation-contenu .div-image-presenation {
   padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .presentation .presentation-contenu .div-image-presenation img {
@@ -561,15 +561,18 @@ form button:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
   width: 100%;
   margin-bottom: 40px;
+  flex-wrap: wrap;
+  overflow-x: none; /* Add this line */
+  scrollbar-width: none; /* Add this line */
 }
 
 .card {
   display: flex;
-  height: 340px;
-  width: 200px;
+  height: 350px;
+  width: 170px;
   background-color: #ffffff;
   border-radius: 20px;
 /*   margin-left: -50px; */
@@ -608,7 +611,7 @@ form button:hover {
   top: 50px;
   left: 20px;
   height: 5px;
-  width: 150px;
+  width: 130px;
 }
 
 .emptybar {
@@ -638,7 +641,10 @@ form button:hover {
   left: 20px;
   right: 20px;
   color: black;
-  font-size: 1.1em;
+}
+
+.contenucart p {
+  font-size: 0.8em;
 }
 
 .lieu-date-competence li {
@@ -681,13 +687,11 @@ form button:hover {
 }
 
   .contact h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    text-align: center;
   }
 
-
-
   .bas-container p {
-    font-size: 1em;
-    text-align: center;
+    display: none;
   }
 }

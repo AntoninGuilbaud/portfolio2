@@ -171,7 +171,12 @@ footer .footer {
         text-align: left;
     }
     .footer .row a i {
-        margin: 0% 3%;
+        margin: 3% 3%;
+    }
+
+    .footer .row {
+        font-size: 0.6em;
+
     }
 
 }
