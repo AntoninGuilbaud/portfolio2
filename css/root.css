@@ -157,18 +157,6 @@ footer .footer {
     color: #515bd4;
 }
 
-
-@media only screen and (max-width: 768px) {
-    body {
-        background: red; 
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-    }
-  }
-
-
 @media (max-width: 768px) {
 
     nav {
