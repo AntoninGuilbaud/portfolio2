@@ -160,7 +160,7 @@ footer .footer {
 
 @media only screen and (max-width: 768px) {
     body {
-        background:url("../image/back3.jpg");      
+        background: red; 
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
