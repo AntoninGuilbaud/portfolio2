@@ -199,3 +199,9 @@ footer .footer {
 
 }
 
+@media only screen and (max-device-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-size: 100vw 100vh;
+    }
+}
+
