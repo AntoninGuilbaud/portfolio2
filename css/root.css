@@ -13,6 +13,7 @@ body {
     font-family: "Rubik", sans-serif;
     background:url("../image/back3.jpg");
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -161,6 +162,23 @@ footer .footer {
 
 @media (max-width: 768px) {
 
+    nav {
+        display: none;
+    }
+
+    body {
+        background: url("../image/back3.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+
+    .mouse-tracker {
+        display: none;
+    }
+
     .footer {
         text-align: center;
         padding: 5%;
@@ -180,25 +198,4 @@ footer .footer {
     }
 
 }
-
-
-@media only screen and (max-width: 768px) {
-    nav {
-        display: none;
-    }
-
-    body {
-        background: url("../image/back3.jpg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-    }
-    
-
-    .mouse-tracker {
-        display: none;
-    }
-}
-
 
