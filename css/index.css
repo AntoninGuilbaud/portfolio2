@@ -513,11 +513,12 @@ form button:hover {
   }
   
   .index-contenu-p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .index-contenu h1 {
-    font-size: 2em;
+    font-size: 3em;
+    text-align: center;
   }
 
   .presentation {
