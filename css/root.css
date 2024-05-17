@@ -167,6 +167,10 @@ footer .footer {
 
     body {
         background: url("../image/back3-mobile.png");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
     }
 
     nav {
