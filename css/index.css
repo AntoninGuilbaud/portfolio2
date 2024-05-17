@@ -348,6 +348,9 @@
   text-align: center;
 }
 
+.containerexp ion-icon {
+  font-size: 10px;
+}
 
 .exp1 {
     padding: 20px;
@@ -400,7 +403,7 @@
 
 .containerexp a:hover {
   color: #249396;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .exp2 {
@@ -653,7 +656,7 @@ form button:hover {
 }
 
 .presentation-contenu p {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .presentation .presentation-contenu .div-image-presenation {
@@ -798,17 +801,48 @@ form button:hover {
   transition: 0.3s;
 }
 
+.experience h1 {
+  font-size: 2.5em;
+  background: transparent;
+  text-align: center;
+}
+
+.containerexp {
+  padding: 30px;
+}
+
+.containerexp h2 {
+  font-size: 1.5em;
+}
+
+
+.containerexp ion-icon {
+  min-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  max-width: 20px;
+}
+
+.containerexp ul li {
+  text-align: center;
+}
+
+.containerexp .competences ion-icon {
+  display: none;
+}
+
 .contact {
     padding-left: 10px;
     padding-right: 10px;
 }
 
   .contact h2 {
-    font-size: 1.4em;
+    font-size: 1.6em;
     text-align: center;
   }
 
   .bas-container p {
-    display: none;
+    font-size: 0.8em;
+    text-align: center;
   }
 }
