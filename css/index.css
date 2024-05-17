@@ -191,7 +191,7 @@
 }
 
 .projets h2 {
-  font-size: 4em;
+  font-size: 3em;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -320,10 +320,86 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 60px;
-    padding-right: 60px;
     background-color: black;
+}
 
+.experience h1 {
+  font-size: 3em;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: 80px;
+}
+
+.experience h2 {
+    font-size: 2em;
+}
+
+.containerexp .titrelogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.containerexp .titrelogo img {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+
+.exp1 {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 20px;
+    color: black;
+}
+
+.containerexp ul {
+  padding-top: 10px;
+}
+
+.containerexp ul li {
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.containerexp ion-icon {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.containerexp a {
+  list-style-type: none;
+  font-size: 1em;
+  color: black;
+}
+
+.containerexp a:hover {
+  color: #249396;
+  transition: 0.3s;
+}
+
+.exp2 {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 20px;
+  color: black;
+}
+
+.containerexp .exp2 .titrelogo img {
+  height: 30px;
+  width: 40px;
+  text-align: center;
+  margin-right: 5px;
 }
 
 /* CONTACT ------------------------------------------ */
@@ -351,6 +427,22 @@
 .contact h2 {
     font-size: 3.4em;
     margin-top: 40px;
+    animation: highlight 5s ease-in-out infinite;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 3px;
+}
+
+@keyframes highlight {
+  0% {
+    color: black; /* initial color */
+  }
+  50% {
+    color: #249396; /* desired color */
+  }
+  100% {
+    color: black; /* initial color */
+  }
 }
 
 .haut-container p {
