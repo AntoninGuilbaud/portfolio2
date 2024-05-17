@@ -78,7 +78,7 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    background: rgba(255, 255, 255, 0.299);
+    background: rgba(199, 199, 199, 0.299);
     height: 50px;
     border-radius: 30px;
     padding: 20px;
@@ -94,8 +94,8 @@ nav ul li a {
     color: white;
     font-size: 18px;
     padding: 7px 13px;
-    border-radius: 3px;
     transition: all 0.3s ease;
+    border-radius: 20px;
 }
 
 nav ul li a:hover {
@@ -111,11 +111,10 @@ nav ul li img {
 }
 
 nav ul li a.active {
-    color : white;
-    background: rgba(255, 255, 255, 0.099);
-    border-radius: 20px;
-    font-weight: bold;
-
+    color : black;
+    /*background: rgba(255, 255, 255, 0.099);*/
+    background: rgba(255, 255, 255, 0.799);
+    font-weight: 600;
 }
 
 

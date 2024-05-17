@@ -20,6 +20,13 @@ document.addEventListener("DOMContentLoaded", function() {
         indexSection.scrollIntoView({ behavior: 'smooth' });
     });
 
+    const presentationButton = document.querySelector('#scroll-to-presentation');
+    const presentationSection = document.querySelector('#presentation');
+
+    presentationButton.addEventListener('click', function() {
+        presentationSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
     // Ajouter la classe "active" à la section correspondante dans la navbar
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('nav ul li a');
@@ -71,7 +78,5 @@ document.addEventListener("mousemove", e => {
     document.documentElement.style.setProperty("--mouse-x", e.clientX +'px');
     document.documentElement.style.setProperty("--mouse-y", e.clientY +'px');
   });
-
-
 
 
