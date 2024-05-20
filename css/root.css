@@ -166,11 +166,8 @@ footer .footer {
 @media (max-width: 768px) {
 
     body {
-        background: url("../image/back4-mobile.png");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
+        background: url("../image/back3-mobile.png") no-repeat center center fixed;
+        background-size: 100vw 56.25vh; /* 16:9 ratio */
     }
 
     .mouse-tracker {
