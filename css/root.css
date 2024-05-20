@@ -166,8 +166,8 @@ footer .footer {
 @media (max-width: 768px) {
 
     body {
-        background: url("../image/back3-mobile.png") no-repeat center center;
-        background-size: 56.25vh 100vh; /* 9:16 ratio */
+        background: url("../image/back3-mobile.png") repeat center center;
+        background-size: 60vh 100vh; /* 9:16 ratio */
         background-position: center center;
     }
 
