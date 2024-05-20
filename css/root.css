@@ -60,7 +60,6 @@ nav {
 }
 
 
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -96,6 +95,7 @@ nav ul li a {
     padding: 7px 13px;
     transition: all 0.3s ease;
     border-radius: 20px;
+    display: inline-block;
 }
 
 nav ul li a:hover {
@@ -108,6 +108,7 @@ nav ul li img {
     vertical-align: middle;
     filter: invert(100%); 
     padding-top: 4px;
+    cursor: pointer; /* Ajoutez ce style pour indiquer que l'image est cliquable */
 }
 
 nav ul li a.active {
@@ -172,10 +173,6 @@ footer .footer {
         background-repeat: no-repeat;
     }
 
-    nav {
-        display: none;
-    }
-
     .mouse-tracker {
         display: none;
     }
@@ -198,4 +195,54 @@ footer .footer {
 
     }
 
+}
+
+@media (min-width: 769px) {
+    #menuButton {
+        display: none;
+    }
+    #menuList {
+        display: flex;
+        justify-content: center;
+    }
+    #menuList li {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #menuButton {
+        display: block;
+        background: #9ccbcd;
+        color: white;
+        border: 1px solid transparent;
+        padding: 5px;
+        border-radius: 20px;
+        margin-top: 10px;
+        font-size: 1em;
+
+    }
+    #menuList {
+        display: none;
+        background: red;
+    }
+    #menuList.show {
+        display: block;
+        background: rgba(0, 0, 0, 0.769);
+        min-height: 35vh;
+    }
+    #nav {
+        justify-content: center;
+        align-items: center;
+    }
+    #nav:not(:hover) > ul {
+        display: none; /* Masquer la liste ul par défaut en mobile */
+    }
 }
