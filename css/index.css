@@ -115,6 +115,11 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    transition: 0.5s;
+}
+
+.presentation .presentation-contenu .div-image-presenation:hover {
+    transform: scale(1.1);
 }
 
 .presentation .presentation-contenu .div-image-presenation img {
@@ -125,6 +130,11 @@
     box-shadow: 40px 16px #249396;
     border-radius: 20px;
     transition: 0.5s;
+}
+
+.presentation .presentation-contenu .div-image-presenation img:hover {
+  transform: scale(1.1);
+  box-shadow: 40px 16px #00f7ff;
 }
 
 @keyframes rotateImage {
@@ -144,6 +154,11 @@
     font-size: 4.5em;
     color: #249396;
     position: relative;
+    transition: 0.5s;
+}
+
+.presentation-contenu h1:hover {
+    color:#00f7ff;
 }
 
 .presentation-contenu h3 {
@@ -165,19 +180,15 @@
 }
 
 .presentation-contenu a {
-    color: blue;
+    color: #249396;
     font-weight: bold;
     font-style: italic;
     font-size: 1em;
-}
-
-.presentation-contenu a:hover {
-    color: blue;
     transition: 0.5s;
 }
 
-.presentation-contenu a:not(:hover) {
-    color: #249396;
+.presentation-contenu a:hover {
+    color: #00f7ff;
     transition: 0.5s;
 }
 
@@ -205,7 +216,7 @@
 .projets h2 {
   font-size: 3em;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .card {
@@ -584,19 +595,14 @@ form button:hover {
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 20px;
-
+    transition: 0.5s;
 }
 
 .bas-container .download-button:hover {
     transform: scale(1.02);
-    transition: 0.5s;
-    color: blue;
+    color: #249396;
 }
 
-.bas-container .download-button:not(:hover) {
-    transform: scale(1.0);
-    transition: 0.5s;
-}
 
 .bas-container p {
     font-size: 1.3em;
@@ -629,7 +635,7 @@ form button:hover {
 
 
 /* ____________________________________ Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   .index-contenu {
     width: 100%;
@@ -669,7 +675,7 @@ form button:hover {
 }
 
 .presentation-contenu p {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .presentation .presentation-contenu .div-image-presenation {
@@ -678,9 +684,10 @@ form button:hover {
 }
 
 .presentation .presentation-contenu .div-image-presenation img {
-  height: 20vh;
+  height: 30vh;
   width: 20vh;
   object-fit: cover;
+  box-shadow: 20px 10px #249396;
 }
 
 
@@ -843,6 +850,7 @@ form button:hover {
 .containerexp .competences ion-icon {
   display: none;
 }
+
 
 .contact {
     padding-left: 10px;
