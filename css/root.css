@@ -217,9 +217,8 @@ footer .footer {
         align-items: center;
         justify-content: center;
         text-align: center;
-        backdrop-filter: blur(10px); 
-
     }
+
     #menuButton {
         display: block;
         background: rgba(199, 199, 199, 0.499);
@@ -234,7 +233,6 @@ footer .footer {
     }
     #menuList {
         display: none;
-        background: red;
     }
     #menuList.show {
         display: block;
