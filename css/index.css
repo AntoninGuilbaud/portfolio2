@@ -157,10 +157,6 @@
     transition: 0.5s;
 }
 
-.presentation-contenu h1:hover {
-    color:#00f7ff;
-}
-
 .presentation-contenu h3 {
     padding: 0px;
     flex-direction: row;
