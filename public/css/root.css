@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: "Bricolage Grotesque", sans-serif; */
+    font-family: "Rubik", sans-serif;
+    background:url("../image/back3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+}
+
+:root {
+    --mouse-x: calc(50vw + 1px);
+    --mouse-y: calc(50vh + 1px);
+}
+
+.mouse-tracker {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5vmin;
+    height: 5vmin;
+    background: rgba(255,255,255,.2);
+    border-radius: 50%;
+    opacity: 0.8;
+    transform: 
+      translate(-50%, -50%)
+      translate(
+        var(--mouse-x),
+        var(--mouse-y)
+      );
+    pointer-events : none;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav ul {
+    width: min-content; /* Définissez la taille du ul en pourcentage de la largeur du parent */
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background: rgba(199, 199, 199, 0.299);
+    height: 50px;
+    border-radius: 30px;
+    padding: 20px;
+    backdrop-filter: blur(10px); 
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color: rgba(255, 255, 255, 0.769);
+}
+
+nav ul li img {
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    filter: invert(100%); 
+    padding-top: 4px;
+    cursor: pointer; /* Ajoutez ce style pour indiquer que l'image est cliquable */
+}
+
+nav ul li a.active {
+    color : black;
+    /*background: rgba(255, 255, 255, 0.099);*/
+    background: rgba(255, 255, 255, 0.799);
+    font-weight: 700;
+}
+
+
+footer .footer {
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: white;
+    font-size: 0.8em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+.footer .row .insta:hover {
+    color: #DD2A7B;
+}
+
+.footer .row .linkedin:hover {
+    color: #006599;
+}
+
+.footer .row .mail:hover {
+    color: #515bd4;
+}
+
+@media (max-width: 768px) {
+
+    .mouse-tracker {
+        display: none;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 5%;
+    }
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+    .footer .row a i {
+        margin: 3% 3%;
+    }
+
+    .footer .row {
+        font-size: 0.6em;
+
+    }
+
+}
+
+@media (max-width: 430px) {
+    body {
+        background: url("../image/back3-mobile.png") repeat center center;
+        background-size: 60vh 100vh; /* 9:16 ratio */
+        background-position: center center;
+    }
+}
+
+@media (min-width: 769px) {
+    #menuButton {
+        display: none;
+    }
+    #menuList {
+        display: flex;
+        justify-content: center;
+    }
+    #menuList li {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #menuButton {
+        display: block;
+        background: rgba(199, 199, 199, 0.499);
+        color: white;
+        border: 1px solid transparent;
+        backdrop-filter: blur(10px); 
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 10px;
+        font-size: 1em;
+
+    }
+    #menuList {
+        display: none;
+    }
+    #menuList.show {
+        display: block;
+        background: rgba(0, 0, 0, 0.769);
+        min-height: 35vh;
+    }
+    #nav {
+        justify-content: center;
+        align-items: center;
+    }
+    #nav:not(:hover) > ul {
+        display: none; /* Masquer la liste ul par défaut en mobile */
+    }
+}
+
+.check {
+    display: none;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 20px;
+}
